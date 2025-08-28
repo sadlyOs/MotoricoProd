@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <script type="module" crossorigin src="../../assets/main-oK4nxsJG.js"></script>
+  <link rel="stylesheet" crossorigin href="../../assets/main-CRNBMv-5.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header__logo">
+            <div class="header__img">
+                <a href="../../index.html">
+                    <img src="data:image/svg+xml,%3csvg%20width='32'%20height='21'%20viewBox='0%200%2032%2021'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M22.2587%204.1343L20.4122%200.93655C20.0965%200.389897%2019.3074%200.389979%2018.9919%200.936714L15.7294%206.58963L13.1726%2011.0175L15.7294%2015.4453L17.4523%2012.4632L18.2863%2011.0175L19.7019%208.56489L26.9417%2020.7894H30.9238C31.5633%2020.7894%2031.9567%2020.09%2031.6246%2019.5435L22.2587%204.1343Z'%20fill='%23636AE8'/%3e%3cpath%20d='M15.2278%2016.3445H10.6875L8.13062%2020.7723H12.6709L15.2278%2016.3445Z'%20fill='url(%23paint0_linear_40_906)'/%3e%3cpath%20d='M10.6848%2016.3616L8.12798%2020.7895H22.5314C23.1627%2020.7895%2023.5572%2020.1061%2023.2416%2019.5594L21.395%2016.3616L18.3114%2011.0175L15.7546%206.58965L14.3362%204.13432L12.4896%200.936321C12.1739%200.389709%2011.3849%200.389709%2011.0693%200.936362L0.317139%2019.5595C0.0015173%2020.1061%200.39604%2020.7895%201.02728%2020.7895H4.72067L9.52985%2012.4633L11.7794%208.5649L13.1978%2011.0175L15.7546%2015.4453L16.2813%2016.3616H15.2251H10.6848Z'%20fill='%23999DF0'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_40_906'%20x1='22.0616'%20y1='0.794948'%20x2='10.5091'%20y2='20.5611'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%2358CAEF'/%3e%3cstop%20offset='0.18'%20stop-color='%234EBEE8'/%3e%3cstop%20offset='0.5'%20stop-color='%2333A1D6'/%3e%3cstop%20offset='0.92'%20stop-color='%230871B9'/%3e%3cstop%20offset='1'%20stop-color='%230067B3'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="icon" />
+                </a>
+            </div>
+            <div class="header__text">
+                <a href="../../index.html">
+                    Prosthesis Connect
+                </a>
+            </div>
+        </div>
+        <div class="header__adapt">
+            <div class="header__links">
+                <nav class="header__nav menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="../../index.html">Home</a></li>
+                        <li class="menu__item"><a href="./products.html">Products</a></li>
+                        <li class="menu__item"><a href="./FAQ.html">FAQ</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__lang">
+                <div class="header__select" id="select">
+                    <div class="select__head" id="selectText">Russian</div>
+                    <ul class="select__list">
+                        <li class="select__item" data-value="1">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAACxAAAAsQHGLUmNAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAABElJREFUSImtlX9Q03UYx9/fuR8OmMDAP4SMiwRCAkdUdvoHP5KUw7rzAIcuCiJoyl0CnbriR7sSmWQCZ2B3zKBocBBeXYkokpPO6kJxyN1wAXIIiNTY+AgIbPz49Idu52ADrvP95/M8n/fruc/zeb5fYBkVNvSEppe1VxNCLg5K80Z1vGCq4wXTQWneKCHkYtpX7d8V1HeLlvNg2wt+UqkRXeudrM+v6/bzcuehSAJQMIDJDACgYDwA7GzuHMPw2EhSVN61u1GbXeNz9wXfWOzFWhz49ebdpIpW/c3fbj/wm52nyzUHAJidp7iiJT6ll+63Xb3cmbIsYLikqjjM17Wq/D0/hsdZwnYoLpuF8ph1jHd61jfDxZXFdgHqS7dSH5ZWZ04qlKzoEHd8nxGI1UC4bBZUcUKIZDngi3fBKWXPh2rNoMQGIFdpRXtr/6noOHEcM/VNmJCXYTUQDpuxMXeRpaG508hKKOmqPlypFQGPh6zuMjbox82MpMGA2hOF2HL0YwBAtDwD7i523wEAQPmmG7wPHrGaN3UY8W65Dua5BabtDqkH4M8qbOgJ/aN7/HkAMM8tILFeD43iOEw/X8GEvAwv+wocAjbmHANfHGPpHMlndDDPLQAAfv+b+OXVakPZ/f9OZnsLeTYHc1ofoqKsCM/kHMN0TSP4+2PtApxS48CX7EZ73wRy6/qxwY1rkx8xmjIZQkgTgF0O23yscdkpTH1d98hYKsY6RfZKRwDgAjOYVWAAhXClSnPrdcxqbgMAOKGB4Ia/sgp/OsroeMHUsqFPXTzu0k1+qmIYsJ0PJBoAeKxU+3+viC2QZ1zHKodsBWwNgUCesQoA2thHavr0zbeMNlEum4UzqX4I8xVgWnUefMluu6enaxoxpWzAUEEu0s4/sO6ARTuChXqWj6fLqXtGE/r1M+jXz2B4zIxP430Q5ivApEKJqbPnHLbH3x+LtW9Fwis9G1+EO+E+MVt9howmbPDglbJy9vp3bPN37bV0/u3BFxAb6oFJhRLTql8w8FmOQ8CNvgk4Z74Dp9Q4bP7oKGr2uIPLfvRutvm7dn++L0jDAoDtm5wT1q/j0soDAYgRCa3m2i8V+KBp3CFAquxGo8ZghYQcluGHeCE8BRy6dZO72Ka4pX1ATAiZG5KdpD0bw+lP9X9SnvgC9UlvoYQQOiDNpzoEUB0C6IA0nxJCqE96C+UkNFKV+g4lhNAh2Una89zrVN3cmWzxte7BjrBn66Yqfzw9XdcEbXERxOfGYJq1HZo9zc5TJJfr0KgxwEX2/oLzoaTiyDdCqix5m2+xV1ZK1tXLnZ1pqpGzptkFZkX3JyCHqnqpt3Dt2xGZybVP5pZsckR0SGXia54vbg9w1XHWrMzgrGEQGeTWlx7lJYrY4l27OG/3b3Ja+lIXgEC5Siu6R0xZANYzoK+Cx/UAAAbUAOCvnSIPvZcrt0QuCepQO2jgP/fb0UqRr44gAAAAAElFTkSuQmCC" alt="united-kingdom">
+                            <p>English</p>
+                        </li>
+                        <li class="select__item" data-value="2">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAAsQAAALEBxi1JjQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAJnSURBVEiJtZXNS1RRGMaf99xzu5POVHfGKXSYMSTKwISwD8qSVoEVRonKYKsW7aRFFEgUVpSIVLToH4goK6Ua20SrrJVlBQlBgoyjJvkxt5sSjPfjtJhhGMZxTJv7bA7nfTnP773n3HNeQh7Nzc0FOecnhRDHAWwFEEylxgFEieiVaZovfT7fxHIelCs4Ozsb4JxfBXAWAM9XBAAbQJ8Q4qKqqmMrAjRNayCihwA8Kxhna9627Vav19ufGWSZE13X24jo+RrMAcDDGHuh63pbZjD9Bbqu1wsh+gFIazDPlC2EOKWqaiQNSO35N6yt8lyaNwyj0u/3/2AAwDm/VkBzAPDIstwBAPTgTXRnyM+HkXUe/yshYEWnjSoeGfp5s3dwpqDmKUlNB/w3WCyeOOSAOQAgNpOoY5PxxCanAJPxhMriC4bsFCC+YHJGIOEUgIjA1GJuOgXwuiWTBXzKL6cAZaqisfIS14BTgGCJ8pYi13v2hp48HrQWTRiWgGkLGGZyNC07GbMERNZJEQFcIsgSgUsMnBFkTslRIsgKF9Hm8H4CgNG61pHFgY/bCln9usM13yvePdrBAEDZU9XMNroL9jeRp1i4qreHgdT7E7jT/lk5WtsFytngVifG4DpxpLvsfscnIKujxZrO9/3pfX16yYb/q4iwvqW+t7znblOal5kPPbvXqISPdTF30aoJzF0kis40dGaaA8s0/fFzV3YZwyNPjQ9fK4WR/x6SzCEf3D3q3lfduLn70pcl+XyLxy501ojRicv21HStFZtSbe23DABM3WCwUKkmlW55TxWBW+W324eW8/gLwPHQBrArPicAAAAASUVORK5CYII=" alt="russia">
+                            <p>Russian</p>
+                        </li>
+                        <li class="select__item" data-value="3">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAACxAAAAsQHGLUmNAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAuZJREFUSIm1lkFoXFUUhr9z732TzEAmramF6TQYsJQ2VlOaii6LKC5EN9raEEtBxJVQGxRxK3TRJDpiiyDFhVRJsaJriS3t0oULCQ2CuIgmJtUoGV4mTvLuu8fFTEwzyaRVJz8cHu/89/3/ve+8c3jCFnjs/NLeBD8gwjGQQ8CuOjWPyoQSbka4sW/fyk0305DmwumICC8AbqtNAB646p198/uh3EwjaRoTR4bjFzORn3y0W09Gdr14ZGuRjWr39asDBpxPJ4+MxCe2NOgfWRzqbGds9FntmC4LSbp+cV9B6Ssoxx9R9uThuV69k86LcqV/ePHMpgZHh+PnUR19cl+QW7dhLl5blLHK4T3KXCzMxcLELFRWlMnbjftFQEtHhxcH1hn0lyoFhY8B8UFwDS8uSQVrIGgtjIFqIsimFUQU/ajvvaXi2gmSMAp0Aoz/KPTcBw921Y7/zAEln4ViHnZmYUcW9nZCewa6Ozc1AOhwPj0PIP2lSoEkTAHRKhtZ2NcFP/1RK+TSCnS0w19Jjc9GEFchl4FytamJ9872uHd/uHRu6s9QEZ86lpcj8d6oT4wsVU1YSQSfNlUAwFlMJlLNtQdxUVDnAm1tiTrrH+iSd9yBx4sP7S9XdmytclcIYOsB0AZg8rleWVhY+Bno/p8GzTBlWGv/7cDuDZ3cYgQDzG+jwbyrfjU+G8qVbamByedm3S/f3bz1Wzy9X5LgWF6JJPUmJOl/+kxNZINaF2jLJBoZvztfnJTXLz9dSE26rtFaBO986DHvn/p6Fvi8xeIAY6XT12cMQBr5N4ByC8Vj58PbUB92H564MQe8DIQWiKugr5ZOX5/5xwDgwuA3XyoyBGjTR++OIMKZDwavXVlNbJjor3321HFBL1Ef3/8CZVRfufDStS/uTG7o5IuD41fVSK+ofgok9yCcAJdtsAcbxaHJX8Uqzn7yRNFbe1JEjyk8DNxfp34XmFCVG2oZuzgw/mszjb8BoWgWnodN8CkAAAAASUVORK5CYII=" alt="uzbekistan">
+                            <p>Uzbek</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__element">
+                <a href="./request.html" class="header__button">
+                    <div class="header__button-img">
+                        <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.92492 7.58008C4.31524 7.58008 2.88739 7.94374 1.94917 8.26009C1.25662 8.49436 0.794922 9.14701 0.794922 9.87832L0.794922 12.1401L5.92492 12.1401"
+                                stroke="#171A1F" stroke-width="1.368" stroke-miterlimit="10" stroke-linecap="round" />
+                            <path
+                                d="M5.93008 7.55997C4.35631 7.55997 3.08008 5.71374 3.08008 4.13997L3.08008 3.56997C3.08008 1.9962 4.35631 0.719971 5.93008 0.719971C7.50385 0.719971 8.78008 1.9962 8.78008 3.56997V4.13997C8.78008 5.71374 7.50385 7.55997 5.93008 7.55997Z"
+                                stroke="#171A1F" stroke-width="1.368" stroke-miterlimit="10" stroke-linecap="round" />
+                            <path
+                                d="M7.72168 9.85502C7.97476 8.87177 8.86738 8.14502 9.92986 8.14502C10.7735 8.14502 11.5099 8.6033 11.9043 9.28445"
+                                stroke="#171A1F" stroke-width="1.368" stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M12.9095 7.94727L12.6644 10.4325L10.2305 9.89667L12.9095 7.94727Z"
+                                fill="#171A1F" />
+                            <path
+                                d="M12.1441 11.575C11.891 12.5582 10.9984 13.285 9.93591 13.285C9.09231 13.285 8.35587 12.8267 7.96143 12.1455"
+                                stroke="#171A1F" stroke-width="1.368" stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M6.9502 13.4825L7.1953 10.9973L9.6292 11.5331L6.9502 13.4825Z" fill="#171A1F" />
+                        </svg>
+                    </div>
+                    <span>Leave a Request</span>
+                </a>
+            </div>
+            <div class="header__element">
+                <a href="./contact.html" class="header__button">
+                    <div class="header__button-img">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.83839 7.32861C5.76885 7.97328 5.46732 9.41652 4.15005 9.85542C2.44005 10.4254 1.30005 11.0667 1.30005 13.2754L12.7 13.2754C12.7 11.0667 11.56 10.4254 9.85005 9.85542C8.53221 9.41595 8.23125 7.97328 8.16171 7.32861"
+                                stroke="black" stroke-width="1.368" stroke-miterlimit="10" stroke-linecap="round" />
+                            <path
+                                d="M7.00015 7.55997C5.42638 7.55997 4.15015 6.28374 4.15015 4.70997V3.56997C4.15015 1.9962 5.42638 0.719971 7.00015 0.719971C8.57392 0.719971 9.85015 1.9962 9.85015 3.56997V4.70997C9.85015 6.28374 8.57392 7.55997 7.00015 7.55997Z"
+                                stroke="black" stroke-width="1.368" stroke-miterlimit="10" stroke-linecap="round" />
+                        </svg>
+                        <span>Contact Us</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="header__burger-container" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="header__phone-menu hide cancel" id="phoneMenu">
+            <div class="header__top">
+                <div class="header__links">
+                    <nav class="header__nav menu">
+                        <ul class="menu__list">
+                            <li class="menu__item"><a href="../../index.html">Home</a></li>
+                            <li class="menu__item"><a href="./products.html">Products</a></li>
+                            <li class="menu__item"><a href="./FAQ.html">FAQ</a></li>
+                            <li class="menu__item"><a href="./request.html">Leave a Request</a></li>
+                            <li class="menu__item"><a href="./contact.html">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="header__element header__element-select">
+                    <div class="header__mobile-select">
+                        <div class="header__select header__element-select" id="select2">
+                            <div class="select__head" id="selectText2">Russian</div>
+                            <ul class="select__list">
+                                <li class="select__item" data-value="1">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAACxAAAAsQHGLUmNAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAABElJREFUSImtlX9Q03UYx9/fuR8OmMDAP4SMiwRCAkdUdvoHP5KUw7rzAIcuCiJoyl0CnbriR7sSmWQCZ2B3zKBocBBeXYkokpPO6kJxyN1wAXIIiNTY+AgIbPz49Idu52ADrvP95/M8n/fruc/zeb5fYBkVNvSEppe1VxNCLg5K80Z1vGCq4wXTQWneKCHkYtpX7d8V1HeLlvNg2wt+UqkRXeudrM+v6/bzcuehSAJQMIDJDACgYDwA7GzuHMPw2EhSVN61u1GbXeNz9wXfWOzFWhz49ebdpIpW/c3fbj/wm52nyzUHAJidp7iiJT6ll+63Xb3cmbIsYLikqjjM17Wq/D0/hsdZwnYoLpuF8ph1jHd61jfDxZXFdgHqS7dSH5ZWZ04qlKzoEHd8nxGI1UC4bBZUcUKIZDngi3fBKWXPh2rNoMQGIFdpRXtr/6noOHEcM/VNmJCXYTUQDpuxMXeRpaG508hKKOmqPlypFQGPh6zuMjbox82MpMGA2hOF2HL0YwBAtDwD7i523wEAQPmmG7wPHrGaN3UY8W65Dua5BabtDqkH4M8qbOgJ/aN7/HkAMM8tILFeD43iOEw/X8GEvAwv+wocAjbmHANfHGPpHMlndDDPLQAAfv+b+OXVakPZ/f9OZnsLeTYHc1ofoqKsCM/kHMN0TSP4+2PtApxS48CX7EZ73wRy6/qxwY1rkx8xmjIZQkgTgF0O23yscdkpTH1d98hYKsY6RfZKRwDgAjOYVWAAhXClSnPrdcxqbgMAOKGB4Ia/sgp/OsroeMHUsqFPXTzu0k1+qmIYsJ0PJBoAeKxU+3+viC2QZ1zHKodsBWwNgUCesQoA2thHavr0zbeMNlEum4UzqX4I8xVgWnUefMluu6enaxoxpWzAUEEu0s4/sO6ARTuChXqWj6fLqXtGE/r1M+jXz2B4zIxP430Q5ivApEKJqbPnHLbH3x+LtW9Fwis9G1+EO+E+MVt9howmbPDglbJy9vp3bPN37bV0/u3BFxAb6oFJhRLTql8w8FmOQ8CNvgk4Z74Dp9Q4bP7oKGr2uIPLfvRutvm7dn++L0jDAoDtm5wT1q/j0soDAYgRCa3m2i8V+KBp3CFAquxGo8ZghYQcluGHeCE8BRy6dZO72Ka4pX1ATAiZG5KdpD0bw+lP9X9SnvgC9UlvoYQQOiDNpzoEUB0C6IA0nxJCqE96C+UkNFKV+g4lhNAh2Una89zrVN3cmWzxte7BjrBn66Yqfzw9XdcEbXERxOfGYJq1HZo9zc5TJJfr0KgxwEX2/oLzoaTiyDdCqix5m2+xV1ZK1tXLnZ1pqpGzptkFZkX3JyCHqnqpt3Dt2xGZybVP5pZsckR0SGXia54vbg9w1XHWrMzgrGEQGeTWlx7lJYrY4l27OG/3b3Ja+lIXgEC5Siu6R0xZANYzoK+Cx/UAAAbUAOCvnSIPvZcrt0QuCepQO2jgP/fb0UqRr44gAAAAAElFTkSuQmCC" alt="united-kingdom">
+                                    <p>English</p>
+                                </li>
+                                <li class="select__item" data-value="2">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAAsQAAALEBxi1JjQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAJnSURBVEiJtZXNS1RRGMaf99xzu5POVHfGKXSYMSTKwISwD8qSVoEVRonKYKsW7aRFFEgUVpSIVLToH4goK6Ua20SrrJVlBQlBgoyjJvkxt5sSjPfjtJhhGMZxTJv7bA7nfTnP773n3HNeQh7Nzc0FOecnhRDHAWwFEEylxgFEieiVaZovfT7fxHIelCs4Ozsb4JxfBXAWAM9XBAAbQJ8Q4qKqqmMrAjRNayCihwA8Kxhna9627Vav19ufGWSZE13X24jo+RrMAcDDGHuh63pbZjD9Bbqu1wsh+gFIazDPlC2EOKWqaiQNSO35N6yt8lyaNwyj0u/3/2AAwDm/VkBzAPDIstwBAPTgTXRnyM+HkXUe/yshYEWnjSoeGfp5s3dwpqDmKUlNB/w3WCyeOOSAOQAgNpOoY5PxxCanAJPxhMriC4bsFCC+YHJGIOEUgIjA1GJuOgXwuiWTBXzKL6cAZaqisfIS14BTgGCJ8pYi13v2hp48HrQWTRiWgGkLGGZyNC07GbMERNZJEQFcIsgSgUsMnBFkTslRIsgKF9Hm8H4CgNG61pHFgY/bCln9usM13yvePdrBAEDZU9XMNroL9jeRp1i4qreHgdT7E7jT/lk5WtsFytngVifG4DpxpLvsfscnIKujxZrO9/3pfX16yYb/q4iwvqW+t7znblOal5kPPbvXqISPdTF30aoJzF0kis40dGaaA8s0/fFzV3YZwyNPjQ9fK4WR/x6SzCEf3D3q3lfduLn70pcl+XyLxy501ojRicv21HStFZtSbe23DABM3WCwUKkmlW55TxWBW+W324eW8/gLwPHQBrArPicAAAAASUVORK5CYII=" alt="russia">
+                                    <p>Russian</p>
+                                </li>
+                                <li class="select__item" data-value="3">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAACxAAAAsQHGLUmNAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAuZJREFUSIm1lkFoXFUUhr9z732TzEAmramF6TQYsJQ2VlOaii6LKC5EN9raEEtBxJVQGxRxK3TRJDpiiyDFhVRJsaJriS3t0oULCQ2CuIgmJtUoGV4mTvLuu8fFTEwzyaRVJz8cHu/89/3/ve+8c3jCFnjs/NLeBD8gwjGQQ8CuOjWPyoQSbka4sW/fyk0305DmwumICC8AbqtNAB646p198/uh3EwjaRoTR4bjFzORn3y0W09Gdr14ZGuRjWr39asDBpxPJ4+MxCe2NOgfWRzqbGds9FntmC4LSbp+cV9B6Ssoxx9R9uThuV69k86LcqV/ePHMpgZHh+PnUR19cl+QW7dhLl5blLHK4T3KXCzMxcLELFRWlMnbjftFQEtHhxcH1hn0lyoFhY8B8UFwDS8uSQVrIGgtjIFqIsimFUQU/ajvvaXi2gmSMAp0Aoz/KPTcBw921Y7/zAEln4ViHnZmYUcW9nZCewa6Ozc1AOhwPj0PIP2lSoEkTAHRKhtZ2NcFP/1RK+TSCnS0w19Jjc9GEFchl4FytamJ9872uHd/uHRu6s9QEZ86lpcj8d6oT4wsVU1YSQSfNlUAwFlMJlLNtQdxUVDnAm1tiTrrH+iSd9yBx4sP7S9XdmytclcIYOsB0AZg8rleWVhY+Bno/p8GzTBlWGv/7cDuDZ3cYgQDzG+jwbyrfjU+G8qVbamByedm3S/f3bz1Wzy9X5LgWF6JJPUmJOl/+kxNZINaF2jLJBoZvztfnJTXLz9dSE26rtFaBO986DHvn/p6Fvi8xeIAY6XT12cMQBr5N4ByC8Vj58PbUB92H564MQe8DIQWiKugr5ZOX5/5xwDgwuA3XyoyBGjTR++OIMKZDwavXVlNbJjor3321HFBL1Ef3/8CZVRfufDStS/uTG7o5IuD41fVSK+ofgok9yCcAJdtsAcbxaHJX8Uqzn7yRNFbe1JEjyk8DNxfp34XmFCVG2oZuzgw/mszjb8BoWgWnodN8CkAAAAASUVORK5CYII=" alt="uzbekistan">
+                                    <p>Uzbek</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTACT MAIN -->
+    <main>
+        <section class="section__form">
+            <div class="form form--contact">
+                <div class="form__container form__container--contact container">
+                    <div class="form__left">
+                        <div class="form__header">
+                            <h2>Contact Us</h2>
+                            <span>Fill in the form to get in touch.</span>
+                        </div>
+                        <div class="form__img form__img--contact">
+                            <img src="../../assets/form2-Bw7rQN2J.png" alt="form1">
+                        </div>
+                        <div class="form__background form__background--contact">
+                            <img src="../../assets/points2-zpbULyLQ.png" alt="points">
+                        </div>
+                    </div>
+                    <div class="form__right form__right--contact">
+                        <form action="#" class="form__items">
+                            <div class="form__col">
+                                <div class="form__inputs form__inputs--second">
+                                    <div class="form__two-col">
+                                        <div class="form__input">
+                                            <label for="firstName">First name</label>
+                                            <input type="text" id="firstName" name="firstName"
+                                                placeholder="Enter your name" required />
+                                        </div>
+                                        <div class="form__input">
+                                            <label for="lastName">Last name</label>
+                                            <input type="tel" id="lastName" name="lastName"
+                                                placeholder="Enter your phone" required />
+                                        </div>
+                                    </div>
+                                    <div class="form__input">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" name="email" placeholder="Enter your email"
+                                            required>
+                                    </div>
+                                    <div class="form__input">
+                                        <label for="company">Company name</label>
+                                        <input type="text" id="company" name="company" placeholder="Enter your company"
+                                            required>
+                                    </div>
+                                    <div class="form__input">
+                                        <label for="selectSize">Company size</label>
+                                        <select name="selectSize" id="selectSize">
+                                            <option value="test">Size</option>
+                                            <option value="test">Size</option>
+                                        </select>
+                                    </div>
+                                    <div class="form__input">
+                                        <label for="topic">Which topic best fit your needs?</label>
+                                        <select name="topic" id="topic">
+                                            <option value="test">Topic</option>
+                                            <option value="test">Topic</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form__input">
+                                        <label for="textarea">How can we help?</label>
+                                        <textarea rows="5" name="textarea" id="textarea"
+                                            placeholder="Please share what you want us to help"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form__submit">
+                                <button type="submit" class="form__button link-button">
+                                    <span>Submit</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact__info">
+            <div class="contact__container container">
+                <div class="contact__content">
+                    <div class="contact__header">
+                        <p>Follow Us</p>
+                    </div>
+                    <div class="contact__links">
+                        <div class="contact__social">
+                            <div>
+                                <a href="#">
+                                    <svg width="14" height="11" viewBox="0 0 14 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.4001 1.40772C12.9201 1.60772 12.4401 1.76772 11.8801 1.80772C12.4401 1.48772 12.8401 0.967725 13.0401 0.367725C12.5201 0.687725 11.9601 0.887725 11.3601 1.00772C10.8801 0.487725 10.2001 0.167725 9.48006 0.167725C8.04006 0.167725 6.84006 1.32772 6.84006 2.80772C6.84006 3.00772 6.88006 3.20772 6.92006 3.40772C4.72006 3.28772 2.80006 2.24772 1.48006 0.647725C1.24006 1.04772 1.12006 1.48772 1.12006 1.96772C1.12006 2.88772 1.60006 3.68772 2.28006 4.16772C1.84006 4.16772 1.44006 4.04772 1.08006 3.84772V3.88772C1.08006 5.16772 2.00006 6.20772 3.20006 6.44772C2.96006 6.48772 2.76006 6.52772 2.52006 6.52772C2.36006 6.52772 2.20006 6.52772 2.04006 6.48772C2.36006 7.52772 3.36006 8.28772 4.48006 8.32772C3.60006 9.04772 2.44006 9.44772 1.20006 9.44772C1.00006 9.44772 0.760059 9.44772 0.560059 9.40772C1.76006 10.1277 3.16006 10.5677 4.64006 10.5677C9.48006 10.5677 12.1201 6.56772 12.1201 3.08772C12.1201 2.96772 12.1201 2.84772 12.1201 2.76772C12.6001 2.36772 13.0401 1.92772 13.4001 1.40772Z"
+                                            fill="#FF5733" />
+                                    </svg>
+                                    <span>0 Twitter</span>
+                                </a>
+                                <a href="#">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.4001 7.36763C13.3995 3.96316 10.7338 1.15497 7.33394 0.977358C3.93409 0.79975 0.990262 3.3149 0.634997 6.70079C0.279731 10.0867 2.63739 13.1581 6.00005 13.69L6.00005 9.21764H4.37525V7.36763L6.00005 7.36763L6.00005 5.95764C6.00005 4.35364 6.95565 3.46764 8.41725 3.46764C8.89726 3.47429 9.37613 3.516 9.85005 3.59244V5.16763H9.04286C8.76422 5.13063 8.48388 5.22235 8.28101 5.4169C8.07814 5.61144 7.97475 5.8877 8.00005 6.16763V7.36763L9.77526 7.36763L9.49126 9.21764H8.00005L8.00005 13.69C11.1103 13.198 13.4006 10.5166 13.4001 7.36763Z"
+                                            fill="#FF5733" />
+                                    </svg>
+                                    <span>0 Facebook</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.2 0.367676L0.8 0.367676C0.358172 0.367676 0 0.725848 0 1.16768L0 11.5677C0 12.0095 0.358172 12.3677 0.8 12.3677L11.2 12.3677C11.6418 12.3677 12 12.0095 12 11.5677L12 1.16768C12 0.725848 11.6418 0.367676 11.2 0.367676ZM3.5548 10.6053L1.7496 10.6053L1.7496 4.86768L3.5548 4.86768L3.5548 10.6053ZM2.652 4.08008C2.07252 4.07831 1.60403 3.60743 1.6052 3.02795C1.60638 2.44847 2.07678 1.97949 2.65626 1.98008C3.23574 1.98067 3.7052 2.45059 3.7052 3.03008C3.70531 3.30914 3.59428 3.57676 3.39665 3.77379C3.19902 3.97082 2.93106 4.08103 2.652 4.08008ZM10.2484 10.6053L8.48 10.6053L8.48 7.83008C8.48 7.15528 8.48 6.33008 7.54 6.33008C6.6 6.33008 6.4868 7.04288 6.4868 7.79248L6.4868 10.6429L4.72 10.6429L4.72 4.86768L6.3744 4.86768L6.3744 5.65528H6.412C6.75968 5.05417 7.4104 4.69366 8.1044 4.71768C9.9096 4.71768 10.248 5.91768 10.248 7.45528L10.2484 10.6053Z"
+                                            fill="#FF5733" />
+                                    </svg>
+
+                                    <span>0 LinkedIn</span>
+                                </a>
+                                <a href="#">
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6 1.44768C7.6 1.44768 7.792 1.45368 8.4244 1.48248C8.80498 1.48697 9.18195 1.55692 9.5388 1.68928C9.79932 1.78545 10.035 1.93881 10.2284 2.13808C10.4277 2.33151 10.581 2.56715 10.6772 2.82768C10.8096 3.18453 10.8795 3.5615 10.884 3.94208C10.9128 4.57568 10.92 4.76768 10.92 6.36768C10.92 7.96768 10.914 8.15968 10.8852 8.79208C10.8807 9.17266 10.8108 9.54962 10.6784 9.90648C10.4764 10.4295 10.063 10.8429 9.54 11.0449C9.18315 11.1772 8.80618 11.2472 8.4256 11.2517C7.7932 11.2805 7.6032 11.2865 6.0012 11.2865C4.3992 11.2865 4.2092 11.2805 3.5768 11.2517C3.19622 11.2472 2.81925 11.1772 2.4624 11.0449C2.20188 10.9487 1.96623 10.7953 1.7728 10.5961C1.57353 10.4026 1.42017 10.167 1.324 9.90648C1.19165 9.54962 1.12169 9.17266 1.1172 8.79208C1.0872 8.15968 1.08 7.96968 1.08 6.36768C1.08 4.76568 1.086 4.57568 1.1148 3.94328C1.11929 3.5627 1.18925 3.18573 1.3216 2.82888C1.41812 2.56824 1.5719 2.33258 1.7716 2.13928C1.96503 1.94001 2.20068 1.78665 2.4612 1.69048C2.81805 1.55812 3.19502 1.48817 3.5756 1.48368C4.208 1.45488 4.4 1.44768 6 1.44768ZM6 0.367676C4.3704 0.367676 4.166 0.374476 3.5264 0.403676C3.02849 0.414225 2.53595 0.508893 2.0696 0.683676C1.66951 0.834254 1.30698 1.07011 1.0072 1.37488C0.702004 1.67454 0.465729 2.03707 0.3148 2.43728C0.140017 2.90362 0.0453491 3.39616 0.0348 3.89408C0.0068 4.53368 0 4.73808 0 6.36768C0 7.99728 0.00680001 8.20168 0.036 8.84128C0.0465491 9.33919 0.141217 9.83173 0.316 10.2981C0.466929 10.6983 0.703204 11.0608 1.0084 11.3605C1.30806 11.6657 1.6706 11.9019 2.0708 12.0529C2.53715 12.2277 3.02969 12.3223 3.5276 12.3329C4.1676 12.3621 4.3716 12.3689 6.0012 12.3689C7.6308 12.3689 7.8352 12.3621 8.4748 12.3329C8.97271 12.3223 9.46525 12.2277 9.9316 12.0529C10.7372 11.7406 11.3741 11.1037 11.6864 10.2981C11.8612 9.83173 11.9559 9.33919 11.9664 8.84128C11.9956 8.20128 12.0024 7.99728 12.0024 6.36768C12.0024 4.73808 11.9956 4.53368 11.9664 3.89408C11.9559 3.39616 11.8612 2.90362 11.6864 2.43728C11.5355 2.03707 11.2992 1.67454 10.994 1.37488C10.6943 1.06968 10.3318 0.833405 9.9316 0.682476C9.46525 0.507693 8.97271 0.413025 8.4748 0.402476C7.834 0.374476 7.6296 0.367676 6 0.367676Z"
+                                            fill="#FF5733" />
+                                        <path
+                                            d="M5.99992 3.2876C4.29888 3.2876 2.91992 4.66656 2.91992 6.3676C2.91992 8.06863 4.29888 9.4476 5.99992 9.4476C7.70096 9.4476 9.07992 8.06863 9.07992 6.3676C9.07992 4.66656 7.70096 3.2876 5.99992 3.2876ZM5.99992 8.3676C4.89535 8.3676 3.99992 7.47217 3.99992 6.3676C3.99992 5.26303 4.89535 4.3676 5.99992 4.3676C7.10449 4.3676 7.99992 5.26303 7.99992 6.3676C7.99992 7.47217 7.10449 8.3676 5.99992 8.3676Z"
+                                            fill="#FF5733" />
+                                        <path
+                                            d="M9.19998 3.88775C9.59763 3.88775 9.91998 3.5654 9.91998 3.16775C9.91998 2.77011 9.59763 2.44775 9.19998 2.44775C8.80234 2.44775 8.47998 2.77011 8.47998 3.16775C8.47998 3.5654 8.80234 3.88775 9.19998 3.88775Z"
+                                            fill="#FF5733" />
+                                    </svg>
+                                    <span>О Instagram</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__col footer__col--logo">
+                    <img src="data:image/svg+xml,%3csvg%20width='44'%20height='20'%20viewBox='0%200%2044%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M10.8038%2017.9972L13.8767%2013.9561C14.3054%2013.3944%2015.163%2013.3944%2015.5838%2013.9561L18.6566%2017.9972C19.0934%2018.5745%2018.6805%2019.4015%2017.942%2019.4015H11.5184C10.78%2019.4015%2010.3591%2018.5745%2010.8038%2017.9972Z'%20fill='%23E8618C'/%3e%3cpath%20d='M43.7147%2018.0842L30.3409%200.514992C29.9186%20-0.0383632%2029.0739%20-0.0383632%2028.6594%200.514992L24.1545%206.43288C23.8886%206.78642%2023.8886%207.26294%2024.1545%207.61648L25.6483%209.5763C26.0472%2010.1066%2026.8528%2010.1066%2027.2594%209.5763L28.8236%207.52425C29.1678%207.07077%2029.856%207.07077%2030.1923%207.52425L38.6155%2018.5838C39.0377%2019.1372%2039.6947%2019.46%2040.3986%2019.46H43.0186C43.746%2019.46%2044.1605%2018.6453%2043.7225%2018.0765L43.7147%2018.0842Z'%20fill='%23636AE8'/%3e%3cpath%20d='M28.6397%2018.0771L22.9769%2010.6327L20.2353%207.02963L15.2833%200.514827C14.8615%20-0.0383082%2014.018%20-0.0383082%2013.604%200.514827L0.247616%2018.0771C-0.189782%2018.6456%200.224187%2019.46%200.950583%2019.46H3.56721C4.27016%2019.46%204.92626%2019.1373%205.34805%2018.5841L13.7602%207.52898C14.1039%207.08337%2014.7912%207.08337%2015.1271%207.52898L17.4937%2010.6327L20.2353%2014.2358L23.5392%2018.5841C23.961%2019.1373%2024.6171%2019.46%2025.3201%2019.46H27.9367C28.6631%2019.46%2029.0693%2018.6456%2028.6397%2018.0771Z'%20fill='%23636AE8'/%3e%3c/svg%3e" alt="logo">
+                    <h3>Prosthesis Connect</h3>
+                </div>
+                <div class="footer__col footer__col--subscribe">
+                    <h4>Subscribe to our newsletter</h4>
+                    <input type="email" placeholder="Enter your email" />
+                    <button class="link-button footer__btn">Subscribe</button>
+                </div>
+                <div class="footer__col footer__col--lists">
+                    <div class="footer__list">
+                        <span>Product</span>
+                        <ul>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__list">
+                        <span>Resources</span>
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">User guides</a></li>
+                            <li><a href="#">Webinars</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__list">
+                        <span>Company</span>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__list">
+                        <span>Plans & Pricing</span>
+                        <ul>
+                            <li><a href="#">Personal</a></li>
+                            <li><a href="#">Start up</a></li>
+                            <li><a href="#">Organization</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__col footer__col--other">
+                    <div class="footer__links">
+                        <p>© 2024 Brand, Inc.</p>
+                        <ul>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__icons">
+                    <a href="#"><img src="data:image/svg+xml,%3csvg%20width='20'%20height='17'%20viewBox='0%200%2020%2017'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M19.5998%202.42763C18.8798%202.72763%2018.1598%202.96763%2017.3198%203.02763C18.1598%202.54763%2018.7598%201.76763%2019.0598%200.867627C18.2798%201.34763%2017.4398%201.64763%2016.5398%201.82763C15.8198%201.04763%2014.7998%200.567627%2013.7198%200.567627C11.5598%200.567627%209.75984%202.30763%209.75984%204.52763C9.75984%204.82763%209.81984%205.12763%209.87984%205.42763C6.57984%205.24763%203.69984%203.68763%201.71984%201.28763C1.35984%201.88763%201.17984%202.54763%201.17984%203.26763C1.17984%204.64763%201.89984%205.84763%202.91984%206.56763C2.25984%206.56763%201.65984%206.38763%201.11984%206.08763V6.14763C1.11984%208.06763%202.49984%209.62763%204.29984%209.98763C3.93984%2010.0476%203.63984%2010.1076%203.27984%2010.1076C3.03984%2010.1076%202.79984%2010.1076%202.55984%2010.0476C3.03984%2011.6076%204.53984%2012.7476%206.21984%2012.8076C4.89984%2013.8876%203.15984%2014.4876%201.29984%2014.4876C0.999844%2014.4876%200.639844%2014.4876%200.339844%2014.4276C2.13984%2015.5076%204.23984%2016.1676%206.45984%2016.1676C13.7198%2016.1676%2017.6798%2010.1676%2017.6798%204.94763C17.6798%204.76763%2017.6798%204.58763%2017.6798%204.46763C18.3998%203.86763%2019.0598%203.20763%2019.5998%202.42763Z'%20fill='%23FF5733'/%3e%3c/svg%3e" alt="twitter"></a>
+                    <a href="#"><img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M19.6001%2010.3676C19.5993%205.2609%2015.6007%201.04861%2010.5009%200.7822C5.40114%200.515787%200.985393%204.28851%200.452495%209.36734C-0.0804037%2014.4462%203.45609%2019.0533%208.50008%2019.8512L8.50008%2013.1426H6.06288V10.3676H8.50008V8.25262C8.50008%205.84662%209.93348%204.51762%2012.1259%204.51762C12.8459%204.5276%2013.5642%204.59017%2014.2751%204.70482V7.06762L13.0643%207.06762C12.6463%207.01211%2012.2258%207.14969%2011.9215%207.44151C11.6172%207.73333%2011.4621%208.14771%2011.5001%208.56762V10.3676H14.1629L13.7369%2013.1426H11.5001L11.5001%2019.8512C16.1655%2019.1132%2019.6008%2015.091%2019.6001%2010.3676Z'%20fill='%23FF5733'/%3e%3c/svg%3e" alt="facebook"></a>
+                    <a href="#"><img src="data:image/svg+xml,%3csvg%20width='18'%20height='19'%20viewBox='0%200%2018%2019'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M16.8%200.367676L1.2%200.367676C0.537258%200.367676%200%200.904934%200%201.56768L0%2017.1677C0%2017.8304%200.537258%2018.3677%201.2%2018.3677L16.8%2018.3677C17.4627%2018.3677%2018%2017.8304%2018%2017.1677L18%201.56768C18%200.904934%2017.4627%200.367676%2016.8%200.367676ZM5.3322%2015.7241L2.6244%2015.7241L2.6244%207.11768H5.3322L5.3322%2015.7241ZM3.978%205.93628C3.10878%205.93363%202.40604%205.22731%202.4078%204.35809C2.40957%203.48886%203.11517%202.7854%203.9844%202.78628C4.85362%202.78716%205.5578%203.49205%205.5578%204.36128C5.55796%204.77987%205.39142%205.1813%205.09497%205.47685C4.79853%205.77239%204.3966%205.93771%203.978%205.93628ZM15.3726%2015.7241H12.72V11.5613C12.72%2010.5491%2012.72%209.31128%2011.31%209.31128C9.9%209.31128%209.7302%2010.3805%209.7302%2011.5049V15.7805H7.08L7.08%207.11768L9.5616%207.11768V8.29908H9.618C10.1395%207.39741%2011.1156%206.85666%2012.1566%206.89268C14.8644%206.89268%2015.372%208.69268%2015.372%2010.9991L15.3726%2015.7241Z'%20fill='%23FF5733'/%3e%3c/svg%3e" alt="linkedin"></a>
+                    <a href="#"><img src="data:image/svg+xml,%3csvg%20width='20'%20height='15'%20viewBox='0%200%2020%2015'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M19.4199%203.52765C19.4199%203.52765%2019.2399%202.20765%2018.6399%201.60765C17.9199%200.827647%2017.0799%200.827647%2016.7199%200.767647C14.0199%200.587647%209.9999%200.587646%209.9999%200.587646C9.9999%200.587646%205.9799%200.587647%203.2799%200.767647C2.9199%200.827647%202.0799%200.827647%201.3599%201.60765C0.759902%202.20765%200.579902%203.52765%200.579902%203.52765C0.579902%203.52765%200.399902%205.08765%200.399902%206.64765L0.399902%208.08765C0.399902%209.64765%200.579902%2011.2076%200.579902%2011.2076C0.579902%2011.2076%200.759902%2012.5276%201.3599%2013.1276C2.0799%2013.9076%203.0399%2013.8476%203.4599%2013.9676C5.0199%2014.0876%209.9999%2014.1476%209.9999%2014.1476C9.9999%2014.1476%2014.0199%2014.1476%2016.7199%2013.9676C17.0799%2013.9076%2017.9199%2013.9076%2018.6399%2013.1276C19.2399%2012.5276%2019.4199%2011.2076%2019.4199%2011.2076C19.4199%2011.2076%2019.5999%209.64765%2019.5999%208.08765L19.5999%206.64765C19.5999%205.08765%2019.4199%203.52765%2019.4199%203.52765ZM8.0199%209.88765L8.0199%204.48765L13.1799%207.18765L8.0199%209.88765Z'%20fill='%23FF5733'/%3e%3c/svg%3e" alt="youtube"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
